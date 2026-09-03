@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurante - menú, especialidades, horarios y contacto.">
+  <title>Restaurante | Sabor Chiquitano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" id="inicio">
+    <a class="logo" href="#inicio">SABOR <span>CHIQUITANO</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#historia">Nosotros</a>
+      <a href="#menu">Menú</a>
+      <a href="#especiales">Especiales</a>
+      <a href="#galeria">Galería</a>
+      <a class="nav-cta" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Reemplaza img/hero.jpg por tu propia fotografía -->
+      <div class="hero-bg image-placeholder" data-image="img/hero.jpg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Cocina con sabor y tradición</p>
+        <h1>Sabores que<br><em>se quedan.</em></h1>
+        <p class="hero-text">Platos típicos, carnes a la parrilla, hamburguesas y especialidades preparadas para compartir.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Ver el menú</a>
+          <a class="btn btn-outline" href="#contacto">Contáctanos</a>
+        </div>
+      </div>
+      <a class="scroll-down" href="#historia">↓</a>
+    </section>
+
+    <section class="story section" id="historia">
+      <div class="section-grid">
+        <div class="story-image image-frame">
+          <img src="img/restaurante.jpg" alt="Interior o ambiente del restaurante" data-fallback="Foto del restaurante">
+          <span class="stamp">SABOR<br>LOCAL</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow dark">Nuestra esencia</p>
+          <h2>Una mesa hecha<br>para <em>compartir.</em></h2>
+          <p>Una propuesta gastronómica pensada para disfrutar sabores intensos, platos abundantes y recetas que celebran la cocina de nuestra tierra.</p>
+          <p>Desde un almuerzo del día hasta una buena parrilla, nuestro menú reúne opciones para cada momento.</p>
+          <a href="#menu" class="text-link">Descubrir el menú <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading light-heading">
+        <p class="eyebrow">Nuestra carta</p>
+        <h2>Elegí tu <em>favorito.</em></h2>
+        <p>Consulta nuestras opciones y precios en bolivianos.</p>
+      </div>
+
+      <div class="category-tabs" role="tablist" aria-label="Categorías del menú">
+        <button class="tab active" data-category="all">Todo</button>
+        <button class="tab" data-category="biffes">Biffes</button>
+        <button class="tab" data-category="tipicas">Típicas</button>
+        <button class="tab" data-category="parrilla">Parrilla</button>
+        <button class="tab" data-category="pollo">Pollo</button>
+        <button class="tab" data-category="milanesas">Milanesas</button>
+        <button class="tab" data-category="hamburguesas">Hamburguesas</button>
+        <button class="tab" data-category="especiales">Especiales</button>
+        <button class="tab" data-category="bebidas">Bebidas</button>
+        <button class="tab" data-category="postres">Postres</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-category="biffes">
+          <div class="card-photo"><img src="img/biffecamba.jpg" alt="Biffe Camba"><span>01</span></div>
+          <div class="card-body"><div><h3>Biffe Camba</h3><p>Preparación de la casa</p></div><strong>35 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="biffes">
+          <div class="card-photo"><img src="img/biffe-chorrellana.jpg" alt="Biffe con Chorrellana"><span>02</span></div>
+          <div class="card-body"><div><h3>Biffe con Chorrellana</h3><p>Carne acompañada de chorrellana</p></div><strong>45 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="biffes">
+          <div class="card-photo"><img src="img/lomo-montado.jpg" alt="Lomo Montado"><span>03</span></div>
+          <div class="card-body"><div><h3>Lomo Montado</h3><p>Especialidad de la casa</p></div><strong>55 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/locro.jpg" alt="Locro de Gallina Criolla"><span>04</span></div>
+          <div class="card-body"><div><h3>Locro de Gallina Criolla</h3><p>Plato típico</p></div><strong>35 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/keperi.jpg" alt="Keperi al Horno"><span>05</span></div>
+          <div class="card-body"><div><h3>Keperi al Horno</h3><p>Preparación tradicional</p></div><strong>48 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/majadito-charque.jpg" alt="Majadito de Charque Tostado"><span>06</span></div>
+          <div class="card-body"><div><h3>Majadito de Charque Tostado</h3><p>Plato típico</p></div><strong>45 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/majadito-pato.jpg" alt="Majadito de Pato"><span>07</span></div>
+          <div class="card-body"><div><h3>Majadito de Pato</h3><p>Plato típico</p></div><strong>45 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/rapi-jugo.jpg" alt="Rapi al Jugo"><span>08</span></div>
+          <div class="card-body"><div><h3>Rapi al Jugo</h3><p>Preparación tradicional</p></div><strong>40 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/majadito-rapi.jpg" alt="Majadito con Rapi"><span>09</span></div>
+          <div class="card-body"><div><h3>Majadito con Rapi</h3><p>Plato típico</p></div><strong>55 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/picante-gallina.jpg" alt="Picante de Gallina"><span>10</span></div>
+          <div class="card-body"><div><h3>Picante de Gallina</h3><p>Plato típico</p></div><strong>55 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="tipicas">
+          <div class="card-photo"><img src="img/pique-macho.jpg" alt="Pique Macho"><span>11</span></div>
+          <div class="card-body"><div><h3>Pique Macho</h3><p>Clásico para compartir</p></div><strong>48 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="parrilla">
+          <div class="card-photo"><img src="img/punta-s.jpg" alt="Punta de S"><span>12</span></div>
+          <div class="card-body"><div><h3>Punta de S</h3><p>Parrilla</p></div><strong>95 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="parrilla">
+          <div class="card-photo"><img src="img/picana.jpg" alt="Picaña"><span>13</span></div>
+          <div class="card-body"><div><h3>Picaña</h3><p>Parrilla</p></div><strong>85 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="parrilla">
+          <div class="card-photo"><img src="img/cuadril.jpg" alt="Cuadril"><span>14</span></div>
+          <div class="card-body"><div><h3>Cuadril</h3><p>Parrilla</p></div><strong>85 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="parrilla">
+          <div class="card-photo"><img src="img/filete-pollo.jpg" alt="Filete de Pollo"><span>15</span></div>
+          <div class="card-body"><div><h3>Filete de Pollo</h3><p>Parrilla</p></div><strong>40 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="parrilla">
+          <div class="card-photo"><img src="img/pacumutu-res.jpg" alt="Pacumutu de Res"><span>16</span></div>
+          <div class="card-body"><div><h3>Pacumutu de Res</h3><p>Parrilla</p></div><strong>40 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="pollo">
+          <div class="card-photo"><img src="img/chicharron-agridulce.jpg" alt="Chicharrón de Pollo Agridulce"><span>17</span></div>
+          <div class="card-body"><div><h3>Agridulce</h3><p>Chicharrón de pollo</p></div><strong>40 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="pollo">
+          <div class="card-photo"><img src="img/chicharron-agripicante.jpg" alt="Chicharrón de Pollo Agripicante"><span>18</span></div>
+          <div class="card-body"><div><h3>Agripicante</h3><p>Chicharrón de pollo</p></div><strong>40 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="pollo">
+          <div class="card-photo"><img src="img/chicharron-barbacoa.jpg" alt="Chicharrón de Pollo Barbacoa"><span>19</span></div>
+          <div class="card-body"><div><h3>Barbacoa</h3><p>Chicharrón de pollo</p></div><strong>40 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="pollo">
+          <div class="card-photo"><img src="img/chicharron-simple.jpg" alt="Chicharrón de Pollo Simple"><span>20</span></div>
+          <div class="card-body"><div><h3>Simple</h3><p>Chicharrón de pollo</p></div><strong>35 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="milanesas">
+          <div class="card-photo"><img src="img/milanesa-napolitana.jpg" alt="Milanesa Napolitana"><span>21</span></div>
+          <div class="card-body"><div><h3>Milanesa Napolitana</h3><p>Res / Pollo</p></div><strong>45 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="milanesas">
+          <div class="card-photo"><img src="img/milanesa-clasica.jpg" alt="Milanesa Clásica"><span>22</span></div>
+          <div class="card-body"><div><h3>Milanesa Clásica</h3><p>Res / Pollo</p></div><strong>35 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="milanesas">
+          <div class="card-photo"><img src="img/milanesa-picada.jpg" alt="Milanesa Picada"><span>23</span></div>
+          <div class="card-body"><div><h3>Milanesa Picada</h3><p>Res / Pollo</p></div><strong>35 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="milanesas">
+          <div class="card-photo"><img src="img/milanesa-mixta.jpg" alt="Milanesa Picada Mixta"><span>24</span></div>
+          <div class="card-body"><div><h3>Milanesa Picada Mixta</h3><p>Mixta</p></div><strong>40 Bs</strong></div>
+        </article>
+        <article class="menu-card featured-card" data-category="hamburguesas">
+          <div class="card-photo"><img src="img/hamburguesa-clasica.jpg" alt="Hamburguesa Clásica"><span>25</span></div>
+          <div class="card-body"><div><h3>Hamburguesa Clásica</h3><p>Pan, lechuga, tomate, 150 gr de carne, queso cheddar, salsa de la casa y papas fritas.</p></div><strong>30 Bs</strong></div>
+        </article>
+        <article class="menu-card featured-card" data-category="hamburguesas">
+          <div class="card-photo"><img src="img/hamburguesa-especial.jpg" alt="Hamburguesa Especial de la Casa"><span>26</span></div>
+          <div class="card-body"><div><h3>Hamburguesa Especial de la Casa</h3><p>Doble carne, doble cheddar, jamón, chorizo, huevo, salsa de la casa y papas fritas.</p></div><strong>45 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="especiales">
+          <div class="card-photo"><img src="img/tabla-especial.jpg" alt="Tabla Especial de la Casa"><span>27</span></div>
+          <div class="card-body"><div><h3>Tabla Especial de la Casa</h3><p>Para 4 personas</p></div><strong>240 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="especiales">
+          <div class="card-photo"><img src="img/tablita-vip.jpg" alt="Tablita VIP"><span>28</span></div>
+          <div class="card-body"><div><h3>Tablita VIP</h3><p>Para 2 personas</p></div><strong>120 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="especiales">
+          <div class="card-photo"><img src="img/pacu-frito.jpg" alt="Pacú Frito"><span>29</span></div>
+          <div class="card-body"><div><h3>Pacú Frito</h3><p>Especial de la casa</p></div><strong>55 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="bebidas">
+          <div class="card-photo"><img src="img/refrescos.jpg" alt="Refrescos naturales"><span>30</span></div>
+          <div class="card-body"><div><h3>Jarra</h3><p>Refrescos de frutas naturales de estación</p></div><strong>35 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="bebidas">
+          <div class="card-photo"><img src="img/refrescos.jpg" alt="Refrescos naturales"><span>31</span></div>
+          <div class="card-body"><div><h3>½ Jarra</h3><p>Refrescos de frutas naturales de estación</p></div><strong>20 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="bebidas">
+          <div class="card-photo"><img src="img/refrescos.jpg" alt="Refresco natural 500 ml"><span>32</span></div>
+          <div class="card-body"><div><h3>Vaso 500 ml</h3><p>Refresco natural</p></div><strong>10 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="bebidas">
+          <div class="card-photo"><img src="img/refrescos.jpg" alt="Refresco natural botella 500 ml"><span>33</span></div>
+          <div class="card-body"><div><h3>Botella 500 ml</h3><p>Refresco natural</p></div><strong>12 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="postres">
+          <div class="card-photo"><img src="img/mousse-maracuya.jpg" alt="Mousse de Maracuyá"><span>34</span></div>
+          <div class="card-body"><div><h3>Mousse de Maracuyá</h3><p>Postre</p></div><strong>15 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="postres">
+          <div class="card-photo"><img src="img/carlota-limon.jpg" alt="Carlota de Limón"><span>35</span></div>
+          <div class="card-body"><div><h3>Carlota de Limón</h3><p>Postre</p></div><strong>15 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="postres">
+          <div class="card-photo"><img src="img/leche-asada.jpg" alt="Leche Asada"><span>36</span></div>
+          <div class="card-body"><div><h3>Leche Asada</h3><p>Postre</p></div><strong>15 Bs</strong></div>
+        </article>
+        <article class="menu-card" data-category="postres">
+          <div class="card-photo"><img src="img/pave-leche.jpg" alt="Pave de Leche con Frutos Rojos"><span>37</span></div>
+          <div class="card-body"><div><h3>Pave de Leche con Frutos Rojos</h3><p>Postre</p></div><strong>12 Bs</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="specials section" id="especiales">
+      <div class="section-heading">
+        <p class="eyebrow dark">Para compartir</p>
+        <h2>Especiales de la <em>casa.</em></h2>
+      </div>
+      <div class="special-grid">
+        <article class="special large image-placeholder" data-image="img/tabla-especial.jpg">
+          <div><p>4 personas</p><h3>Tabla Especial<br>de la Casa</h3><strong>240 Bs</strong></div>
+        </article>
+        <article class="special image-placeholder" data-image="img/tablita-vip.jpg">
+          <div><p>2 personas</p><h3>Tablita VIP</h3><strong>120 Bs</strong></div>
+        </article>
+        <article class="special image-placeholder" data-image="img/pacu-frito.jpg">
+          <div><p>Especial</p><h3>Pacú Frito</h3><strong>55 Bs</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="galeria">
+      <div class="section-heading light-heading">
+        <p class="eyebrow">Viví la experiencia</p>
+        <h2>Una imagen dice <em>más.</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div><img src="img/galeria-1.jpg" alt="Plato del restaurante"></div>
+        <div><img src="img/galeria-2.jpg" alt="Ambiente del restaurante"></div>
+        <div><img src="img/galeria-3.jpg" alt="Parrilla del restaurante"></div>
+        <div><img src="img/galeria-4.jpg" alt="Especialidad del restaurante"></div>
+        <div><img src="img/galeria-5.jpg" alt="Mesa del restaurante"></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="contact-grid">
+        <div>
+          <p class="eyebrow dark">Te esperamos</p>
+          <h2>Vení a disfrutar<br>con <em>nosotros.</em></h2>
+          <div class="contact-info">
+            <div><span>HORARIO</span><p>Lunes a domingos y feriados<br>8:00 a 22:30 Hrs.</p></div>
+            <div><span>CONTACTOS</span><p><a href="tel:+59177852598">77852598</a><br><a href="tel:+59164465075">64465075</a></p></div>
+          </div>
+        </div>
+        <form class="reservation-form" id="reservationForm">
+          <h3>Solicitar reserva</h3>
+          <p>Completa tus datos y te mostraremos un mensaje de confirmación.</p>
+          <label>Nombre<input type="text" name="name" required placeholder="Tu nombre"></label>
+          <div class="form-row">
+            <label>Fecha<input type="date" name="date" required></label>
+            <label>Personas<input type="number" name="people" min="1" max="30" value="2" required></label>
+          </div>
+          <label>Mensaje<textarea name="message" rows="4" placeholder="Alguna indicación especial..."></textarea></label>
+          <button class="btn btn-primary" type="submit">Solicitar reserva</button>
+          <p class="form-note" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">SABORES <span>DE LA CASA</span></div>
+    <p>Platos con identidad, preparados para compartir.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
